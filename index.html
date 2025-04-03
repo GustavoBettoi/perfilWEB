@@ -28,6 +28,7 @@
         </section>
         <section id="secCaixa">
             <b><h2>Olá, eu sou o Gustavo</h2></b>
+            <img src="IMG/perfil.webp">
     <p>Gosto de água, recomendo que você beba um pouco, seu(ua) desidratado(a) 🥤💧
         <br> 🙂🙂🙂
     </p>
@@ -35,6 +36,16 @@
     </main>
     <footer></footer>
     <style>
+        body{
+            color: var(--cor-fonte);
+            background-color: var(--cor-fundo);
+        }
+        :root{
+            --cor-fundo: #e5e5e5;
+            --cor-caixa: #ffbe0b;
+            --cor-fonte: #000814;
+
+        }
         main{
             display: flex;
             flex-direction: row;
@@ -50,11 +61,21 @@
             justify-items: center;
         }
         #secCaixa{
-            background-color: blueviolet;
+            background-color: var(--cor-aixa);
             border-radius: 5px;
+            justify-items: center;
         }
         button{
-            
+            background-color: var(--cor-caixa);
+            border-radius: 6px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            border-radius: 100%;
+            width: 30vw;
+            object-fit: cover;
+            height: 30vw;
         }
     </style>
 </body>
